@@ -1,25 +1,9 @@
 mixed-port: 7890
-allow-lan: true
+allow-lan: false
 mode: rule
-log-level: info
-ipv6: false
-unified-delay: true
-tcp-concurrent: true
-
-dns:
-  enable: true
-  ipv6: false
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  fallback:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
+log-level: warning
 
 proxies:
-  # ========== mieru 节点 ==========
   - name: "直连-香港01-2x"
     type: mieru
     server: hk.cdn.games.cdnazuremicrosoft.com
@@ -128,15 +112,14 @@ proxies:
     transport: TCP
     udp: true
 
-  # ========== pro vless+reality ==========
   - name: "pro-香港-01"
     type: vless
     server: 48739.sdwan.digitaldashcloud.com
     port: 58711
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: firefox
@@ -150,8 +133,8 @@ proxies:
     port: 58712
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: qq
@@ -165,8 +148,8 @@ proxies:
     port: 58713
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: chrome
@@ -180,8 +163,8 @@ proxies:
     port: 58714
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: firefox
@@ -195,8 +178,8 @@ proxies:
     port: 57980
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: edge
@@ -210,8 +193,8 @@ proxies:
     port: 48741
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: qq
@@ -225,8 +208,8 @@ proxies:
     port: 60775
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: firefox
@@ -240,8 +223,8 @@ proxies:
     port: 60776
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: edge
@@ -255,8 +238,8 @@ proxies:
     port: 60777
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: ios
@@ -270,8 +253,8 @@ proxies:
     port: 60778
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: edge
@@ -285,8 +268,8 @@ proxies:
     port: 21219
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: firefox
@@ -300,8 +283,8 @@ proxies:
     port: 5461
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: chrome
@@ -315,8 +298,8 @@ proxies:
     port: 5460
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: edge
@@ -330,8 +313,8 @@ proxies:
     port: 5453
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: edge
@@ -345,8 +328,8 @@ proxies:
     port: 55567
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: safari
@@ -360,8 +343,8 @@ proxies:
     port: 56845
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: chrome
@@ -375,8 +358,8 @@ proxies:
     port: 55569
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: ios
@@ -390,8 +373,8 @@ proxies:
     port: 5454
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: firefox
@@ -405,8 +388,8 @@ proxies:
     port: 47117
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: edge
@@ -420,8 +403,8 @@ proxies:
     port: 54387
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: qq
@@ -435,8 +418,8 @@ proxies:
     port: 5462
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: qq
@@ -450,8 +433,8 @@ proxies:
     port: 5455
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: firefox
@@ -465,8 +448,8 @@ proxies:
     port: 5456
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: firefox
@@ -480,8 +463,8 @@ proxies:
     port: 5457
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: ios
@@ -495,8 +478,8 @@ proxies:
     port: 5458
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: chrome
@@ -510,8 +493,8 @@ proxies:
     port: 50154
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: chrome
@@ -525,8 +508,8 @@ proxies:
     port: 60013
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: chrome
@@ -540,8 +523,8 @@ proxies:
     port: 53349
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: edge
@@ -555,8 +538,8 @@ proxies:
     port: 50174
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: api.adidas.com
     client-fingerprint: qq
@@ -564,15 +547,14 @@ proxies:
       public-key: tmlOT7vvbKwBuucRKRm33TqocfvHfgDAstvca5Yy-gU
       short-id: 8b10495bdb
 
-  # ========== lite vless+reality ==========
   - name: "lite-香港-01"
     type: vless
     server: 02726.cdn.digitaldashcloud.com
     port: 2087
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: repost.aws
     client-fingerprint: firefox
@@ -586,8 +568,8 @@ proxies:
     port: 9443
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: www.eero.com
     client-fingerprint: edge
@@ -601,8 +583,8 @@ proxies:
     port: 5061
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: avs-alexa-na.amazon.com
     client-fingerprint: safari
@@ -616,8 +598,8 @@ proxies:
     port: 2083
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: sellercentral.amazon.ae
     client-fingerprint: ios
@@ -631,8 +613,8 @@ proxies:
     port: 8920
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: images-na.ssl-images-amazon.com
     client-fingerprint: ios
@@ -646,8 +628,8 @@ proxies:
     port: 2053
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: business.amazon.com
     client-fingerprint: firefox
@@ -661,8 +643,8 @@ proxies:
     port: 6514
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: www.amazon.nl
     client-fingerprint: firefox
@@ -676,8 +658,8 @@ proxies:
     port: 15671
     uuid: 40a40503-8444-4526-858c-133de56cd61d
     network: tcp
-    tls: true
     udp: true
+    tls: true
     flow: xtls-rprx-vision
     servername: www.amazon.com.be
     client-fingerprint: safari
@@ -686,116 +668,121 @@ proxies:
       short-id: 706030ef0be31d4b
 
 proxy-groups:
-  - name: 🚀 自动选择
+  - name: "🚀 自动选择"
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
-      - 直连-香港01-2x
-      - 直连-香港03
-      - 直连-香港04-2x
-      - 直连-美国01
-      - 直连-美国02
-      - 直连-美国03
-      - 直连-美国04
-      - 直连-美国05
-      - 直连-日本01-5x
-      - 直连-新加坡01-5x
-      - 直连-韩国01
-      - 直连-德国01
-      - pro-香港-01
-      - pro-香港-02
-      - pro-香港-03
-      - pro-香港-04
-      - pro-家庭宽带-香港hkbn
-      - pro-家庭宽带-香港cmhk
-      - pro-美国01
-      - pro-美国02
-      - pro-美国03
-      - pro-美国04
-      - pro-家庭宽带-美国ATT01-2X
-      - pro-家庭宽带-美国Cox-5X
-      - pro-家庭宽带-美国Wave-10X
-      - pro-新加坡01
-      - pro-新加坡02
-      - pro-新加坡03
-      - pro-日本01
-      - pro-日本02
-      - pro-家庭宽带-日本Biglobe-2x
-      - pro-台湾01
-      - pro-家庭宽带-台湾hinet
-      - pro-家庭宽带-韩国kt
-      - pro-英国01
-      - pro-英国02
-      - pro-泰国01-2x
-      - pro-印度-2x
-      - pro-越南
-      - pro-菲律宾01-2x
-      - pro-马来西亚
-      - lite-香港-01
-      - lite-香港-02
-      - lite-香港-03
-      - lite-美国01
-      - lite-美国02
-      - lite-美国03
-      - lite-新加坡01
-      - lite-新加坡02
+      - "直连-香港01-2x"
+      - "直连-香港03"
+      - "直连-香港04-2x"
+      - "直连-美国01"
+      - "直连-美国02"
+      - "直连-美国03"
+      - "直连-美国04"
+      - "直连-美国05"
+      - "直连-日本01-5x"
+      - "直连-新加坡01-5x"
+      - "直连-韩国01"
+      - "直连-德国01"
+      - "pro-香港-01"
+      - "pro-香港-02"
+      - "pro-香港-03"
+      - "pro-香港-04"
+      - "pro-家庭宽带-香港hkbn"
+      - "pro-家庭宽带-香港cmhk"
+      - "pro-美国01"
+      - "pro-美国02"
+      - "pro-美国03"
+      - "pro-美国04"
+      - "pro-家庭宽带-美国ATT01-2X"
+      - "pro-家庭宽带-美国Cox-5X"
+      - "pro-家庭宽带-美国Wave-10X"
+      - "pro-新加坡01"
+      - "pro-新加坡02"
+      - "pro-新加坡03"
+      - "pro-日本01"
+      - "pro-日本02"
+      - "pro-家庭宽带-日本Biglobe-2x"
+      - "pro-台湾01"
+      - "pro-家庭宽带-台湾hinet"
+      - "pro-家庭宽带-韩国kt"
+      - "pro-英国01"
+      - "pro-英国02"
+      - "pro-泰国01-2x"
+      - "pro-印度-2x"
+      - "pro-越南"
+      - "pro-菲律宾01-2x"
+      - "pro-马来西亚"
+      - "lite-香港-01"
+      - "lite-香港-02"
+      - "lite-香港-03"
+      - "lite-美国01"
+      - "lite-美国02"
+      - "lite-美国03"
+      - "lite-新加坡01"
+      - "lite-新加坡02"
 
-  - name: 🌐 节点选择
+  - name: "🌐 节点选择"
     type: select
     proxies:
-      - 🚀 自动选择
-      - 直连-香港01-2x
-      - 直连-香港03
-      - 直连-香港04-2x
-      - 直连-美国01
-      - 直连-美国02
-      - 直连-美国03
-      - 直连-美国04
-      - 直连-美国05
-      - 直连-日本01-5x
-      - 直连-新加坡01-5x
-      - 直连-韩国01
-      - 直连-德国01
-      - pro-香港-01
-      - pro-香港-02
-      - pro-香港-03
-      - pro-香港-04
-      - pro-家庭宽带-香港hkbn
-      - pro-家庭宽带-香港cmhk
-      - pro-美国01
-      - pro-美国02
-      - pro-美国03
-      - pro-美国04
-      - pro-家庭宽带-美国ATT01-2X
-      - pro-家庭宽带-美国Cox-5X
-      - pro-家庭宽带-美国Wave-10X
-      - pro-新加坡01
-      - pro-新加坡02
-      - pro-新加坡03
-      - pro-日本01
-      - pro-日本02
-      - pro-家庭宽带-日本Biglobe-2x
-      - pro-台湾01
-      - pro-家庭宽带-台湾hinet
-      - pro-家庭宽带-韩国kt
-      - pro-英国01
-      - pro-英国02
-      - pro-泰国01-2x
-      - pro-印度-2x
-      - pro-越南
-      - pro-菲律宾01-2x
-      - pro-马来西亚
-      - lite-香港-01
-      - lite-香港-02
-      - lite-香港-03
-      - lite-美国01
-      - lite-美国02
-      - lite-美国03
-      - lite-新加坡01
-      - lite-新加坡02
+      - "🚀 自动选择"
+      - "直连-香港01-2x"
+      - "直连-香港03"
+      - "直连-香港04-2x"
+      - "直连-美国01"
+      - "直连-美国02"
+      - "直连-美国03"
+      - "直连-美国04"
+      - "直连-美国05"
+      - "直连-日本01-5x"
+      - "直连-新加坡01-5x"
+      - "直连-韩国01"
+      - "直连-德国01"
+      - "pro-香港-01"
+      - "pro-香港-02"
+      - "pro-香港-03"
+      - "pro-香港-04"
+      - "pro-家庭宽带-香港hkbn"
+      - "pro-家庭宽带-香港cmhk"
+      - "pro-美国01"
+      - "pro-美国02"
+      - "pro-美国03"
+      - "pro-美国04"
+      - "pro-家庭宽带-美国ATT01-2X"
+      - "pro-家庭宽带-美国Cox-5X"
+      - "pro-家庭宽带-美国Wave-10X"
+      - "pro-新加坡01"
+      - "pro-新加坡02"
+      - "pro-新加坡03"
+      - "pro-日本01"
+      - "pro-日本02"
+      - "pro-家庭宽带-日本Biglobe-2x"
+      - "pro-台湾01"
+      - "pro-家庭宽带-台湾hinet"
+      - "pro-家庭宽带-韩国kt"
+      - "pro-英国01"
+      - "pro-英国02"
+      - "pro-泰国01-2x"
+      - "pro-印度-2x"
+      - "pro-越南"
+      - "pro-菲律宾01-2x"
+      - "pro-马来西亚"
+      - "lite-香港-01"
+      - "lite-香港-02"
+      - "lite-香港-03"
+      - "lite-美国01"
+      - "lite-美国02"
+      - "lite-美国03"
+      - "lite-新加坡01"
+      - "lite-新加坡02"
 
 rules:
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
   - GEOIP,CN,DIRECT
   - MATCH,🌐 节点选择
